@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Residencia campestre con caballerizas · Mexicaltzingo">
+<meta property="og:description" content="2,496 m² bardeados, casa de 270 m², caballerizas y pozo propio. $10,500,000.">
+<meta property="og:image" content="img/noche.jpg">
+<!-- META PIXEL: pega aquí el código del píxel de tu cuenta de anuncios (Administrador de eventos > Píxel) -->
+<title>Residencia Campestre Mexicaltzingo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Residencia campestre con caballerizas en San Isidro, Mexicaltzingo. 2,496 m² bardeados, casa de 270 m², pozo propio. $10,500,000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@1,500;1,600&display=swap">
+<style>
+/* Layout: navy cinematic hero → cool paper bands → navy closing form. Brand palette only (IA House manual). */
+:root{
+  --navy:#0E2A47; --deep:#0A1F35; --steel:#2F5F8F; --mist:#A9B4C2;
+  --wine:#8F3A3A; --wine-hi:#A84646; --paper:#F2F4F7; --white:#FFFFFF; --ink:#13202E; --muted:#4F5E70; --line:#D5DBE3;
+  --wa:#1F9E57;
+  --f-display:"Montserrat",system-ui,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-accent:"Playfair Display",Georgia,serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 18px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--wine-hi);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font:700 13px/1.2 var(--f-display);letter-spacing:.18em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:800 16px/1 var(--f-display);letter-spacing:.02em;text-decoration:none;border:0;cursor:pointer;padding:18px 26px;border-radius:4px;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-wine{background:var(--wine);color:var(--white)}
+.btn-wine:hover{background:var(--wine-hi)}
+.btn-ghost{background:transparent;color:var(--white);box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--white)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* top bar */
+.top{position:absolute;inset:0 0 auto;z-index:5;padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px}
+.logo{display:flex;align-items:center;gap:12px;color:var(--white);text-decoration:none}
+.logo svg{height:40px;width:auto}
+.logo .bar{width:2px;height:40px;background:currentColor;opacity:.8}
+.logo b{display:block;font:900 22px/.95 var(--f-display);letter-spacing:-.01em}
+.logo small{display:block;font:500 8.5px/1 var(--f-display);letter-spacing:.32em;margin-top:5px}
+.top-call{font:700 14px/1 var(--f-display);color:var(--white);text-decoration:none;letter-spacing:.04em;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;background:var(--deep);color:var(--white);overflow:hidden;padding-top:env(safe-area-inset-top,0px)}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,53,.72) 0%,rgba(10,31,53,.25) 38%,rgba(10,31,53,.55) 62%,rgba(10,31,53,.96) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-block:150px 64px;display:grid;gap:22px}
+.hero .eyebrow{color:var(--mist);display:flex;align-items:center;gap:10px}
+.hero .eyebrow::before{content:"";width:28px;height:2px;background:var(--wine-hi)}
+.hero h1{font-size:clamp(40px,7.4vw,92px);font-weight:900;line-height:.98;letter-spacing:-.02em;max-width:13ch}
+.hero h1 em{font:italic 600 1em/1 var(--f-accent);letter-spacing:0;color:var(--white)}
+.hero .lede{font-size:clamp(18px,2.2vw,22px);max-width:40ch;color:#E3E8EE}
+.price-row{display:flex;flex-wrap:wrap;align-items:flex-end;gap:14px 28px;margin-top:6px}
+.price{font:900 clamp(34px,5vw,54px)/1 var(--f-display);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.price small{display:block;font:700 12px/1 var(--f-display);letter-spacing:.2em;color:var(--mist);margin-bottom:8px}
+.price-note{font:600 14px/1.4 var(--f-display);color:var(--mist);padding-bottom:6px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+
+/* facts strip */
+.facts{background:var(--navy);color:var(--white)}
+.facts ul{list-style:none;margin:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));padding-block:0}
+.facts li{padding:26px 18px;border-left:1px solid rgba(169,180,194,.22);min-width:0}
+.facts li:first-child{border-left:0;padding-left:0}
+.facts strong{display:block;font:800 clamp(24px,2.6vw,32px)/1 var(--f-display);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.facts strong sup{font-size:.5em;vertical-align:.9em;margin-left:1px}
+.facts span{display:block;font:600 13px/1.35 var(--f-display);color:var(--mist);margin-top:8px;letter-spacing:.02em}
+
+/* sections */
+section{padding-block:88px}
+.sec-head{display:grid;gap:14px;margin-bottom:44px;max-width:720px}
+.sec-head .eyebrow{color:var(--wine)}
+.sec-head h2{font-size:clamp(30px,4.2vw,48px);font-weight:900;line-height:1.05;letter-spacing:-.015em;color:var(--navy)}
+.sec-head p{color:var(--muted);font-size:19px}
+
+/* uses */
+.uses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--line);border:2px solid var(--line)}
+.use{background:var(--white);padding:30px 28px;display:grid;gap:10px;align-content:start;min-width:0}
+.use .k{font:800 12px/1 var(--f-display);letter-spacing:.18em;color:var(--steel);text-transform:uppercase}
+.use h3{font-size:22px;font-weight:800;color:var(--navy);line-height:1.15}
+.use p{color:var(--muted);font-size:17px}
+.footnote{font-size:14px;color:var(--muted);margin-top:16px}
+
+/* tour */
+.tour{background:var(--deep);color:var(--white)}
+.tour .sec-head h2{color:var(--white)}
+.tour .sec-head .eyebrow{color:var(--mist)}
+.tour .sec-head p{color:#C9D2DC}
+.tour-grid{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:48px;align-items:center}
+.tour video{width:100%;aspect-ratio:3/4;object-fit:cover;background:#000;border-radius:6px}
+.tour-list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.tour-list li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid rgba(169,180,194,.22)}
+.tour-list li:last-child{border-bottom:1px solid rgba(169,180,194,.22)}
+.tour-list time{font:700 14px/1.6 var(--f-display);color:var(--mist);font-variant-numeric:tabular-nums}
+.tour-list b{font:700 17px/1.4 var(--f-display);display:block}
+.tour-list span{color:#C9D2DC;font-size:16px}
+.yt{margin-top:24px}
+
+/* craft */
+.craft-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:start}
+.craft-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.craft-photos img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.craft-photos img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.materials{list-style:none;margin:0;padding:0}
+.materials li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.materials li b{font:700 17px/1.35 var(--f-display);color:var(--navy)}
+.materials li span{font-size:15px;color:var(--muted);text-align:right}
+.quote{margin-top:30px;font:italic 500 24px/1.35 var(--f-accent);color:var(--navy);border-left:3px solid var(--wine);padding-left:18px}
+
+/* gallery */
+.gallery{background:var(--white)}
+.g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:10px}
+.g figure{margin:0;position:relative;overflow:hidden;border-radius:4px;min-width:0}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.g figure:hover img{transform:scale(1.04)}
+.g figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;font:700 12px/1.2 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--white);background:linear-gradient(transparent,rgba(10,31,53,.85))}
+.g .w2{grid-column:span 2}
+.g .h2{grid-row:span 2}
+
+/* value */
+.value-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.bars{display:grid;gap:22px}
+.bar-row{display:grid;gap:8px}
+.bar-row .lbl{display:flex;justify-content:space-between;gap:12px;font:700 15px/1.3 var(--f-display);color:var(--navy)}
+.bar-row .lbl span{font-variant-numeric:tabular-nums;white-space:nowrap}
+.track{height:18px;background:#E3E8EE;border-radius:2px;overflow:hidden}
+.fill{height:100%}
+.fill.rep{background:var(--steel)}
+.fill.comp{background:var(--mist)}
+.fill.ask{background:var(--wine)}
+.bars .src{font-size:14px;color:var(--muted)}
+
+/* specs */
+.specs{background:var(--white)}
+.spec-table{width:100%;border-collapse:collapse;font-size:17px}
+.spec-table th,.spec-table td{text-align:left;padding:15px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.spec-table th{font:700 14px/1.4 var(--f-display);color:var(--muted);letter-spacing:.04em;width:38%;padding-right:20px}
+.spec-table td{font-variant-numeric:tabular-nums}
+.specs-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}
+.faq details{border-bottom:1px solid var(--line);padding:4px 0}
+.faq summary{cursor:pointer;list-style:none;font:700 18px/1.4 var(--f-display);color:var(--navy);padding:16px 36px 16px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:12px;font:400 28px/1 var(--f-display);color:var(--wine)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);padding:0 0 18px;font-size:17px}
+
+/* location */
+.loc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.loc img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.loc ul{list-style:none;padding:0;margin:20px 0 26px;display:grid;gap:10px}
+.loc li{display:flex;gap:12px;align-items:baseline;color:var(--ink)}
+.loc li::before{content:"";width:8px;height:8px;background:var(--wine);flex:none;transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+
+/* contact */
+.contact{background:var(--navy);color:var(--white)}
+.contact .sec-head h2{color:var(--white)}
+.contact .sec-head .eyebrow{color:var(--mist)}
+.contact .sec-head p{color:#C9D2DC}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:start}
+form{display:grid;gap:16px;background:var(--white);color:var(--ink);padding:30px;border-radius:6px}
+label{display:grid;gap:7px;font:700 14px/1.2 var(--f-display);color:var(--navy)}
+input,select{font:400 17px/1.3 var(--f-body);padding:14px 14px;border:1.5px solid var(--line);border-radius:4px;background:var(--white);color:var(--ink);width:100%}
+input:focus,select:focus{border-color:var(--steel);outline:none;box-shadow:0 0 0 3px rgba(47,95,143,.2)}
+.form-note{font-size:14px;color:var(--muted)}
+.err{color:var(--wine);font:600 14px/1.3 var(--f-body)}
+.agent{display:grid;gap:18px}
+.agent .sig{font:italic 600 30px/1 var(--f-accent)}
+.agent .role{font:700 13px/1 var(--f-display);letter-spacing:.18em;color:var(--mist);margin-top:-8px}
+.phone{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.phone b{font:800 30px/1 var(--f-display);font-variant-numeric:tabular-nums;user-select:all}
+.copy{font:700 13px/1 var(--f-display);background:rgba(255,255,255,.12);color:var(--white);border:0;border-radius:3px;padding:9px 12px;cursor:pointer}
+.agent p{color:#C9D2DC}
+
+footer{background:var(--deep);color:var(--mist);font-size:14px}
+footer .wrap{padding-block:28px 100px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+
+/* floating WA */
+.float-wa{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--wa);color:var(--white);display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:999px;font:800 15px/1 var(--f-display);text-decoration:none;box-shadow:0 10px 26px rgba(10,31,53,.35)}
+.float-wa svg{width:22px;height:22px}
+
+@media (max-width:980px){
+  .facts ul{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .facts li:nth-child(4){border-left:0;padding-left:0}
+  .facts li:nth-child(n+4){border-top:1px solid rgba(169,180,194,.22)}
+  .tour-grid,.craft-grid,.value-grid,.specs-grid,.loc,.contact-grid{grid-template-columns:minmax(0,1fr);gap:36px}
+  .tour video{max-width:380px}
+  .uses{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .g{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  section{padding-block:64px}
+  .top-call{display:none}
+  .hero .wrap{padding-block:120px 44px}
+  .facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts li{padding:20px 12px}
+  .facts li:nth-child(odd){border-left:0;padding-left:0}
+  .facts li:nth-child(4){border-left:1px solid rgba(169,180,194,.22);padding-left:12px}
+  .facts li:nth-child(n+3){border-top:1px solid rgba(169,180,194,.22)}
+  .uses{grid-template-columns:minmax(0,1fr)}
+  .g{grid-auto-rows:150px}
+  .g .h2{grid-row:span 1}
+  .btn{width:100%}
+  .float-wa span{display:none}
+  .float-wa{padding:15px}
+  form{padding:22px}
+  .materials li{grid-template-columns:minmax(0,1fr)}
+  .materials li span{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.g img{transition:none}
+}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="IA House Bienes Raíces">
+      <svg viewBox="30 18 460 555" aria-hidden="true"><polygon points="35,115 165,22 165,568 35,568" fill="#2F5F8F"/><polygon points="165,22 190,30 190,568 165,568" fill="#A9B4C2"/><polygon points="190,30 295,85 295,262 400,295 400,150 485,185 485,568 400,568 400,395 295,368 295,568 190,568" fill="#FFFFFF"/></svg>
+      <span class="bar"></span>
+      <span><b>IA HOUSE</b><small>BIENES RAÍCES</small></span>
+    </a>
+    <a class="top-call" href="https://wa.me/527225160188" target="_blank" rel="noopener">WhatsApp 722 516 01 88</a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero" style="padding-block:0">
+  <img class="poster" src="img/noche.jpg" alt="">
+  <video autoplay muted loop playsinline poster="img/noche.jpg" aria-hidden="true">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="wrap">
+    <p class="eyebrow">Residencia campestre con caballerizas · San Isidro, Mexicaltzingo</p>
+    <h1>Vida de rancho a <em>minutos</em> de Metepec</h1>
+    <p class="lede">2,496 m² bardeados, casa de dos niveles hecha a mano, caballerizas y pozo propio. Para vivir, para tus caballos o para emprender.</p>
+    <div class="price-row">
+      <p class="price"><small>PRECIO</small>$10,500,000</p>
+      <p class="price-note">Venta de contado · Régimen ejidal</p>
+    </div>
+    <div class="ctas">
+      <a class="btn btn-wine" href="#agendar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Agendar visita
+      </a>
+      <a class="btn btn-ghost" href="#recorrido">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Ver el recorrido
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <ul class="wrap">
+    <li><strong>2,496 m<sup>2</sup></strong><span>Terreno totalmente bardeado</span></li>
+    <li><strong>270 m<sup>2</sup></strong><span>Casa de 2 niveles</span></li>
+    <li><strong>160 m<sup>2</sup></strong><span>Caballerizas y anexos</span></li>
+    <li><strong>3</strong><span>Recámaras en planta alta</span></li>
+    <li><strong>Pozo</strong><span>Propio, más cisterna</span></li>
+    <li><strong>4–5 años</strong><span>De construcción, excelente estado</span></li>
+  </ul>
+</div>
+
+<section id="usos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Vivir, invertir o emprender</p>
+      <h2>Una propiedad con espacio para lo que imagines</h2>
+      <p>Pocas casas en el Valle de Toluca juntan terreno de verdad, caballerizas ya construidas y acabados de residencia, tan cerca de la ciudad.</p>
+    </div>
+    <div class="uses">
+      <article class="use"><p class="k">Vivir</p><h3>El campo con todo el confort</h3><p>Jardines amplios, terraza techada y una casa terminada para mudarte sin obras.</p></article>
+      <article class="use"><p class="k">Caballos</p><h3>Tus caballos en casa</h3><p>160 m² de caballerizas y anexos, más espacio abierto para trabajar y convivir con ellos.</p></article>
+      <article class="use"><p class="k">Animales</p><h3>Espacio de verdad</h3><p>Para quien ya tiene animales y en un fraccionamiento no cabe.</p></article>
+      <article class="use"><p class="k">Emprender</p><h3>Restaurante campestre o granja*</h3><p>Terreno, acceso con portón y caseta para un proyecto de comida o recreación.</p></article>
+      <article class="use"><p class="k">Eventos</p><h3>Reuniones al aire libre*</h3><p>Jardín y terraza para celebraciones familiares o eventos pequeños.</p></article>
+      <article class="use"><p class="k">Patrimonio</p><h3>Inversión a largo plazo</h3><p>Más de 2,400 m² en una zona que crece hacia Metepec.</p></article>
+    </div>
+    <p class="footnote">*Usos comerciales sujetos a permisos municipales.</p>
+  </div>
+</section>
+
+<section class="tour" id="recorrido">
+  <div class="wrap">
+    <div class="tour-grid">
+      <video controls playsinline preload="metadata" poster="img/fachada.jpg">
+        <source src="recorrido.mp4" type="video/mp4">
+      </video>
+      <div>
+        <div class="sec-head" style="margin-bottom:24px">
+          <p class="eyebrow">Recorrido de 1 minuto 36 segundos</p>
+          <h2>Conócela antes de visitarla</h2>
+          <p>Desde el aire, por fuera y por dentro: así se ve la propiedad hoy.</p>
+        </div>
+        <ol class="tour-list">
+          <li><time>0:00</time><div><b>Vista aérea</b><span>El terreno completo y su entorno en San Isidro.</span></div></li>
+          <li><time>0:25</time><div><b>Jardines y caballerizas</b><span>Áreas verdes cuidadas y espacios para los caballos.</span></div></li>
+          <li><time>0:40</time><div><b>Planta baja</b><span>Terraza, comedor, cocina y sala con pisos de parota.</span></div></li>
+          <li><time>1:00</time><div><b>Planta alta</b><span>Tres recámaras; la principal con sala de estar y baño amplio.</span></div></li>
+        </ol>
+        <p class="yt" id="ytWrap" hidden><a class="btn btn-ghost" id="ytLink" href="#" target="_blank" rel="noopener">Ver en YouTube</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="acabados">
+  <div class="wrap craft-grid">
+    <div class="craft-photos">
+      <img src="img/sala.jpg" alt="Sala con muro de piedra y pisos de madera" loading="lazy">
+      <img src="img/cocina.jpg" alt="Cocina con gabinetes de madera" loading="lazy">
+      <img src="img/escalera.jpg" alt="Escalera de madera y muros de ladrillo" loading="lazy">
+    </div>
+    <div>
+      <div class="sec-head" style="margin-bottom:20px">
+        <p class="eyebrow">Hecha a mano</p>
+        <h2>Acabados que hoy ya casi no se construyen</h2>
+      </div>
+      <ul class="materials">
+        <li><b>Pisos de parota y duela de madera</b><span>Sala y planta alta</span></li>
+        <li><b>Muros de sillar</b><span>Interior y exterior</span></li>
+        <li><b>Columnas de cantera</b><span>Terraza y accesos</span></li>
+        <li><b>Techos de madera</b><span>Planta baja</span></li>
+        <li><b>Piedra y minerales en la sala</b><span>Muro principal</span></li>
+        <li><b>Vitral y vidrios blindados</b><span>Accesos y ventanas</span></li>
+      </ul>
+      <p class="quote">Construcción de solo 4 a 5 años, en excelente estado.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="galeria">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Galería</p>
+      <h2>De día y de noche</h2>
+    </div>
+    <div class="g">
+      <figure class="w2 h2"><img src="img/aerea.jpg" alt="Vista aérea de la casa y el terreno" loading="lazy"><figcaption>Vista aérea</figcaption></figure>
+      <figure><img src="img/fachada.jpg" alt="Fachada de la casa con jardín" loading="lazy"><figcaption>Fachada</figcaption></figure>
+      <figure><img src="img/noche.jpg" alt="La casa iluminada de noche" loading="lazy"><figcaption>De noche</figcaption></figure>
+      <figure class="w2"><img src="img/terraza.jpg" alt="Terraza techada con vista al jardín" loading="lazy"><figcaption>Terraza techada</figcaption></figure>
+      <figure><img src="img/vestibulo.jpg" alt="Vestíbulo con arco y vitral" loading="lazy"><figcaption>Acceso</figcaption></figure>
+      <figure><img src="img/suite.jpg" alt="Recámara principal con sala de estar" loading="lazy"><figcaption>Recámara principal</figcaption></figure>
+      <figure class="w2"><img src="img/jardin.jpg" alt="Jardín al atardecer" loading="lazy"><figcaption>Jardín</figcaption></figure>
+      <figure class="w2"><img src="img/terreno.jpg" alt="Terreno bardeado visto desde el aire" loading="lazy"><figcaption>Terreno bardeado</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="valor">
+  <div class="wrap value-grid">
+    <div class="sec-head" style="margin-bottom:0">
+      <p class="eyebrow">Un precio con fundamento</p>
+      <h2>Construirla hoy costaría más de lo que pides por ella</h2>
+      <p>Calculamos el terreno con terrenos ejidales parecidos de la zona y la construcción a costo actual, menos su poco desgaste. El resultado está por encima del precio de venta.</p>
+    </div>
+    <div class="bars" role="list">
+      <div class="bar-row" role="listitem">
+        <p class="lbl">Costo de hacerla hoy (terreno + construcción)<span>$12,277,579</span></p>
+        <div class="track"><div class="fill rep" style="width:100%"></div></div>
+      </div>
+      <div class="bar-row" role="listitem">
+        <p class="lbl">Quinta comparable en Zinacantepec, 2,440 m²<span>$10,600,000</span></p>
+        <div class="track"><div class="fill comp" style="width:86.3%"></div></div>
+      </div>
+      <div class="bar-row" role="listitem">
+        <p class="lbl">Precio de esta residencia<span>$10,500,000</span></p>
+        <div class="track"><div class="fill ask" style="width:85.5%"></div></div>
+      </div>
+      <p class="src">Fuente: estimación de valor IA House, octubre de 2026, con comparables de Vivanuncios e Inmuebles24.</p>
+    </div>
+  </div>
+</section>
+
+<section class="specs" id="ficha">
+  <div class="wrap specs-grid">
+    <div>
+      <div class="sec-head" style="margin-bottom:16px">
+        <p class="eyebrow">Ficha técnica</p>
+        <h2>Los datos completos</h2>
+      </div>
+      <table class="spec-table">
+        <tbody>
+          <tr><th scope="row">Ubicación</th><td>Col. San Isidro, Mexicaltzingo, Estado de México</td></tr>
+          <tr><th scope="row">Terreno</th><td>2,496 m², totalmente bardeado</td></tr>
+          <tr><th scope="row">Casa</th><td>270 m² en 2 niveles</td></tr>
+          <tr><th scope="row">Recámaras</th><td>3, en planta alta; la principal con sala de estar</td></tr>
+          <tr><th scope="row">Caballerizas y anexos</th><td>160 m²</td></tr>
+          <tr><th scope="row">Agua</th><td>Pozo propio y cisterna</td></tr>
+          <tr><th scope="row">Acceso</th><td>Caseta y portón</td></tr>
+          <tr><th scope="row">Exteriores</th><td>Jardines amplios y terraza techada</td></tr>
+          <tr><th scope="row">Antigüedad</th><td>4 a 5 años</td></tr>
+          <tr><th scope="row">Régimen</th><td>Ejidal</td></tr>
+          <tr><th scope="row">Forma de pago</th><td>Contado</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="faq">
+      <div class="sec-head" style="margin-bottom:16px">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Antes de agendar</h2>
+      </div>
+      <details><summary>¿Qué significa que sea ejidal?</summary><p>La propiedad está en régimen ejidal, por eso no aplica crédito bancario ni Infonavit. En la visita te explicamos la documentación y cómo se hace la compraventa de forma segura.</p></details>
+      <details><summary>¿Aceptan crédito?</summary><p>No. La venta es de contado.</p></details>
+      <details><summary>¿Puedo poner un restaurante o hacer eventos?</summary><p>El terreno y los accesos lo permiten, pero los usos comerciales dependen de los permisos del municipio.</p></details>
+      <details><summary>¿Cómo es el acceso?</summary><p>La propiedad tiene caseta y portón propios. La calle de llegada es de terracería.</p></details>
+      <details><summary>¿Tiene agua todo el año?</summary><p>Cuenta con pozo propio y cisterna.</p></details>
+      <details><summary>¿Cómo la visito?</summary><p>Con cita. Déjanos tus datos abajo o escríbenos por WhatsApp y te confirmamos día y hora.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="ubicacion">
+  <div class="wrap loc">
+    <img src="img/aerea.jpg" alt="Entorno de la propiedad en San Isidro, Mexicaltzingo" loading="lazy">
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Ubicación</p>
+        <h2>San Isidro, Mexicaltzingo</h2>
+        <p>Tranquilidad de pueblo, con la ciudad cerca.</p>
+      </div>
+      <ul>
+        <li>A pocos minutos de Metepec</li>
+        <li>Zona de terrenos amplios y ambiente campestre</li>
+        <li>La ubicación exacta se comparte al agendar la visita</li>
+      </ul>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=San+Isidro+Mexicaltzingo+Estado+de+M%C3%A9xico" target="_blank" rel="noopener">Ver zona en Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="agendar">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="sec-head">
+        <p class="eyebrow">Agenda tu visita</p>
+        <h2>Propiedades así no se repiten</h2>
+        <p>Déjanos tus datos y se abre WhatsApp con tu mensaje listo para enviar. Te confirmamos día y hora.</p>
+      </div>
+      <div class="agent">
+        <p class="sig">Alejandro Blanco</p>
+        <p class="role">DIRECTOR COMERCIAL · IA HOUSE</p>
+        <div class="phone"><b id="tel">722 516 01 88</b><button class="copy" type="button" id="copyBtn">Copiar número</button></div>
+        <p>Llamadas y WhatsApp. También por mensaje directo en Facebook e Instagram.</p>
+      </div>
+    </div>
+    <form id="leadForm" novalidate>
+      <label for="nombre">Nombre<input id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre"></label>
+      <label for="telefono">WhatsApp<input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required placeholder="10 dígitos"></label>
+      <label for="pago">¿Cómo comprarías?
+        <select id="pago" name="pago">
+          <option>De contado, ya tengo el recurso</option>
+          <option>De contado, vendiendo otra propiedad</option>
+          <option>Todavía lo estoy evaluando</option>
+        </select>
+      </label>
+      <label for="cuando">¿Cuándo te gustaría visitarla?
+        <select id="cuando" name="cuando">
+          <option>Esta semana</option>
+          <option>El fin de semana</option>
+          <option>En las próximas 2 semanas</option>
+          <option>Solo quiero más información</option>
+        </select>
+      </label>
+      <p class="err" id="err" hidden></p>
+      <button class="btn btn-wine" type="submit">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3L3 21z"/></svg>
+        Agendar por WhatsApp
+      </button>
+      <p class="form-note">Usamos tus datos solo para contactarte sobre esta propiedad.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>IA House Bienes Raíces · Invierte Inteligente</span>
+    <span>Precio y disponibilidad sujetos a cambio sin previo aviso.</span>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/527225160188?text=Hola%20Alejandro%2C%20me%20interesa%20la%20residencia%20campestre%20en%20Mexicaltzingo." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3L3 21z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-2L9 9.5z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+// Pon aquí el ID del video de YouTube (lo que va después de youtu.be/), por ejemplo "abc123XYZ"
+const YOUTUBE_ID = "";
+if (YOUTUBE_ID) {
+  const v = document.querySelector('.tour video');
+  const f = document.createElement('iframe');
+  f.src = `https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}?rel=0`;
+  f.title = 'Recorrido de la residencia campestre';
+  f.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+  f.style.cssText = 'width:100%;aspect-ratio:16/9;border:0;border-radius:6px';
+  v.replaceWith(f);
+  document.querySelector('.tour-grid').style.gridTemplateColumns = 'minmax(0,1fr)';
+}
+document.querySelectorAll('a[href^="https://wa.me"]').forEach(a => a.addEventListener('click', () => window.fbq && fbq('track', 'Contact')));
+
+const WA = "527225160188";
+document.getElementById('leadForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (window.fbq) fbq('track', 'Lead');
+  const nombre = document.getElementById('nombre').value.trim();
+  const tel = document.getElementById('telefono').value.replace(/\D/g, '');
+  const err = document.getElementById('err');
+  if (!nombre) { err.textContent = 'Escribe tu nombre para poder saludarte.'; err.hidden = false; return; }
+  if (tel.length < 10) { err.textContent = 'Revisa tu WhatsApp: debe tener 10 dígitos.'; err.hidden = false; return; }
+  err.hidden = true;
+  const msg = `Hola Alejandro, soy ${nombre}. Me interesa la residencia campestre en Mexicaltzingo ($10,500,000).\nMi WhatsApp: ${tel}\nForma de compra: ${document.getElementById('pago').value}\nVisita: ${document.getElementById('cuando').value}`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener') ||
+    (location.href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`);
+});
+
+document.getElementById('copyBtn').addEventListener('click', async (e) => {
+  const b = e.currentTarget;
+  try { await navigator.clipboard.writeText('7225160188'); b.textContent = 'Copiado'; }
+  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById('tel')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selecciona y copia'; }
+  setTimeout(() => b.textContent = 'Copiar número', 2500);
+});
+
+// Pausa el video del hero si el usuario prefiere menos movimiento
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) { const v = document.querySelector('.hero video'); v.removeAttribute('autoplay'); v.pause(); }
+</script>
+
+</body>
+</html>
