@@ -26,6 +26,11 @@ Contacto en todas las páginas: WhatsApp 722 516 01 88 (wa.me/527225160188). Slo
 - Estimación de valor (oct 2026): reposición $12,277,579; rango de mercado $10.07–$10.80 M; comparable quinta Zinacantepec $10,600,000.
 - Usos comerciales (restaurante, eventos) sujetos a permisos municipales.
 
+## Publicación en Vercel
+- Proyecto: `campestre-iahouse` → https://campestre-iahouse.vercel.app
+- En Vercel: Add New › Project › importar `IAHOUSE/ia-house` › Project Name `campestre-iahouse` › Root Directory `mexicaltzingo` › Framework "Other" › Deploy.
+- Cada push a `main` vuelve a publicar solo.
+
 ## Pendiente
 - Fotos y videos nuevos del shooting (dron 16:9 al atardecer, caballerizas, acabados, pozo/caseta/portón, cada espacio).
 - Link de YouTube del recorrido horizontal.
