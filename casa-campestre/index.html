@@ -187,7 +187,8 @@ body.fs-lock{overflow:hidden}
 .reels{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
 .reel{position:relative;aspect-ratio:9/16;max-width:100%;border-radius:18px;overflow:hidden;background:var(--navy);color:#fff;border:0;cursor:pointer;text-align:left}
 .reel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6}
-.reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.reel iframe,.reel video{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.reel video{object-fit:cover}
 .reel .sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,56,0) 40%,rgba(10,31,56,.95))}
 .reel .in{position:absolute;left:18px;right:18px;bottom:18px}
 .reel .n{font-size:12px;font-weight:600;letter-spacing:.18em;color:var(--sky)}
@@ -609,11 +610,11 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 <section id="razones">
   <div class="wrap">
     <div class="eyebrow"><i></i>¿Por qué esta propiedad?</div>
-    <h2>Tres razones, <b>en menos de un minuto.</b></h2>
+    <h2>Conócela <b>en menos de un minuto.</b></h2>
     <div class="reels" id="reels">
-      <button class="reel" type="button" data-i="0"><img src="g-166f8e63.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">RAZÓN 01</span><h3>Tus caballos, en casa</h3></span></button>
-      <button class="reel" type="button" data-i="1"><img src="g-119da1f7.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">RAZÓN 02</span><h3>Una casa hecha a mano</h3></span></button>
-      <button class="reel" type="button" data-i="2"><img src="g-db159b5e.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">RAZÓN 03</span><h3>Espacio para vivir o emprender</h3></span></button>
+      <button class="reel" type="button" data-i="0"><img src="g-166f8e63.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 01</span><h3>Recorrido rápido por la quinta</h3></span></button>
+      <button class="reel" type="button" data-i="1"><img src="g-119da1f7.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 02</span><h3>Antes de comprar, revisa esto</h3></span></button>
+      <button class="reel" type="button" data-i="2"><img src="g-db159b5e.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 03</span><h3>Espacio para vivir o emprender</h3></span></button>
     </div>
   </div>
 </section>
@@ -746,14 +747,16 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
    (lo que va después de watch?v= o de youtu.be/ o de /shorts/). */
 const WA = "527225160188";
 const YT_MAIN = "MQY7Bj2oL_c";               // video principal horizontal
-const YT_REELS = ["", "", ""];      // 3 videos verticales (Shorts)
+const YT_REELS = ["", "", ""];
+const REEL_CDN="https://cdn.jsdelivr.net/gh/IAHOUSE/IA-HOUSE@91f38b55fc121514026feaae9d02f7065785f4c3/casa-campestre/";
+const REEL_MP4 = ["reel1", "reel2", ""];  // videos verticales propios (mp4)      // 3 videos verticales (Shorts)
 /* ================================================= */
 
 const DETAILS = [
   ["terreno","Terreno e infraestructura",[
     "2,496 m² amparados por el título parcelario",
     "Barda perimetral con castillos y remate pecho de paloma",
-    "Terreno elevado 1.30 m con 342 góndolas de relleno",
+    "Terreno elevado 1.30 m con 342 góndolas de relleno: queda en alto, sin problemas de inundación",
     "Dividido en 3 secciones con portones de acero y tablón",
     "Instalación eléctrica subterránea: sin cables aéreos ni postes",
     "Tablero eléctrico con 21 circuitos",
@@ -889,6 +892,9 @@ if(YT_MAIN){
 /* ---- Videos verticales ---- */
 document.querySelectorAll(".reel").forEach(r=>{
   const id=YT_REELS[+r.dataset.i];
+  const mp=REEL_MP4[+r.dataset.i];
+  if(mp){r.querySelector(".soon").remove();r.querySelector("img").src=REEL_CDN+mp+".jpg";r.querySelector("img").style.opacity=".85";
+    r.addEventListener("click",()=>{const d=document.createElement("div");d.className="reel";d.style.cursor="default";d.innerHTML=`<video src="${REEL_CDN+mp}.mp4" poster="${REEL_CDN+mp}.jpg" autoplay controls playsinline></video>`;r.replaceWith(d);if(window.fbq)fbq("trackCustom","VerReel",{reel:mp});},{once:true});return;}
   if(id){r.querySelector(".soon").remove();}
   r.addEventListener("click",()=>{
     if(!id)return;
