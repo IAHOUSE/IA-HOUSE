@@ -524,9 +524,9 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
     <div class="eyebrow"><i></i>En video</div>
     <h2>Conócela <b>en video.</b></h2>
     <div class="reels" id="reels">
-      <button class="reel" type="button" data-i="0"><img src="g-166f8e63.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 01</span><h3>Antes de comprar, revisa esto</h3></span></button>
-      <button class="reel" type="button" data-i="1"><img src="g-119da1f7.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 02</span><h3>Recorrido rápido por la quinta</h3></span></button>
-      <button class="reel" type="button" data-i="2"><img src="g-db159b5e.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 03</span><h3>Recorrido completo</h3></span></button>
+      <button class="reel" type="button" data-i="0"><img src="g-166f8e63.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 01</span><h3>Recorrido completo</h3></span></button>
+      <button class="reel" type="button" data-i="1"><img src="g-119da1f7.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 02</span><h3>Antes de comprar, revisa esto</h3></span></button>
+      <button class="reel" type="button" data-i="2"><img src="g-db159b5e.jpg" alt=""><span class="sh"></span><span class="soon">PRÓXIMAMENTE</span><span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span><span class="in"><span class="n">VIDEO 03</span><h3>Recorrido por todo el rancho</h3></span></button>
     </div>
   </div>
 </section>
@@ -750,8 +750,8 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 const WA = "527225160188";
 const YT_MAIN = "MQY7Bj2oL_c";               // video principal horizontal
 const YT_REELS = ["", "", ""];
-const REEL_CDN="https://cdn.jsdelivr.net/gh/IAHOUSE/IA-HOUSE@6cc53647d32f0a1cb0a82a84b59469eed3825f61/";
-const REEL_MP4 = ["reel-comprar", "reel-recorrido", "reel-completo"];  // videos verticales propios (mp4)      // 3 videos verticales (Shorts)
+const REEL_CDN="https://cdn.jsdelivr.net/gh/IAHOUSE/IA-HOUSE@30ec5ea1b8d4abe2f6620b0fbbb97eaf68fd82ea/";
+const REEL_MP4 = ["reel-completo", "reel-comprar", "reel-rancho"];  // videos verticales propios (mp4)      // 3 videos verticales (Shorts)
 /* ================================================= */
 
 const DETAILS = [
@@ -838,7 +838,7 @@ const CATS = [
   ["planta","Planta alta",["0b03d308","9ceecfa3","e3bf2c7d","046c430b","c8b7f064"]],
   ["recamaras","Recámaras y baños",["7181d50f","93acd5a6","5065695e","49ffcf0d","bedad474","6a41e0fa","fe8d386f","338652d2","9c0cc6c3"]],
 ];
-const NEWF=new Set(["pinnoch2","pinatard","13875d2a", "14949dc5", "160248d2", "1d53b657", "242760c9", "36c37f9a", "4144034b", "41e5b438", "46b16488", "55779554", "6abc5a11", "6b20409a", "885d91ae", "8b69afce", "a42edb78", "a59826b6", "a8174715", "dd08c71f", "ea0ee3cc", "ea259a8d"]);const gsrc=id=>(NEWF.has(id)?"https://cdn.jsdelivr.net/gh/IAHOUSE/IA-HOUSE@6cc53647d32f0a1cb0a82a84b59469eed3825f61/fotos/":"")+`g-${id}.jpg`;
+const NEWF=new Set(["pinnoch2","pinatard","13875d2a", "14949dc5", "160248d2", "1d53b657", "242760c9", "36c37f9a", "4144034b", "41e5b438", "46b16488", "55779554", "6abc5a11", "6b20409a", "885d91ae", "8b69afce", "a42edb78", "a59826b6", "a8174715", "dd08c71f", "ea0ee3cc", "ea259a8d"]);const gsrc=id=>(NEWF.has(id)?"https://cdn.jsdelivr.net/gh/IAHOUSE/IA-HOUSE@30ec5ea1b8d4abe2f6620b0fbbb97eaf68fd82ea/fotos/":"")+`g-${id}.jpg`;
 const FEAT=["pinnoch2","17b65b1f","b3f5a06c","db159b5e","119da1f7","166f8e63","7181d50f"];
 const ALL=["todas","Todas",[...FEAT,...[].concat(...CATS.map(c=>c[2])).filter(x=>!FEAT.includes(x))]];
 const label=id=>(CATS.find(c=>c[2].includes(id))||[])[1]||"";
